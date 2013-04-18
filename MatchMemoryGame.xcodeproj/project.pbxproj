@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF9E5060171F712B0056DD64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9E505F171F712B0056DD64 /* UIKit.framework */; };
+		AF9E5062171F712B0056DD64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9E5061171F712B0056DD64 /* Foundation.framework */; };
+		AF9E5064171F712B0056DD64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9E5063171F712B0056DD64 /* CoreGraphics.framework */; };
+		AF9E506A171F712B0056DD64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF9E5068171F712B0056DD64 /* InfoPlist.strings */; };
+		AF9E506C171F712B0056DD64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9E506B171F712B0056DD64 /* main.m */; };
+		AF9E5070171F712B0056DD64 /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9E506F171F712B0056DD64 /* TCAppDelegate.m */; };
+		AF9E5072171F712B0056DD64 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9E5071171F712B0056DD64 /* Default.png */; };
+		AF9E5074171F712B0056DD64 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9E5073171F712B0056DD64 /* Default@2x.png */; };
+		AF9E5076171F712B0056DD64 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9E5075171F712B0056DD64 /* Default-568h@2x.png */; };
+		AF9E5079171F712B0056DD64 /* TCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9E5078171F712B0056DD64 /* TCViewController.m */; };
+		AF9E507C171F712B0056DD64 /* TCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9E507A171F712B0056DD64 /* TCViewController.xib */; };
+		AF9E5084171F73AD0056DD64 /* MatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9E5083171F73AD0056DD64 /* MatchingGame.m */; };
+		AF9E508B171F7ABF0056DD64 /* TCPlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9E508A171F7ABF0056DD64 /* TCPlayingCard.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF9E505C171F712B0056DD64 /* MatchMemoryGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchMemoryGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9E505F171F712B0056DD64 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AF9E5061171F712B0056DD64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF9E5063171F712B0056DD64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AF9E5067171F712B0056DD64 /* MatchMemoryGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MatchMemoryGame-Info.plist"; sourceTree = "<group>"; };
+		AF9E5069171F712B0056DD64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF9E506B171F712B0056DD64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF9E506D171F712B0056DD64 /* MatchMemoryGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MatchMemoryGame-Prefix.pch"; sourceTree = "<group>"; };
+		AF9E506E171F712B0056DD64 /* TCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
+		AF9E506F171F712B0056DD64 /* TCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
+		AF9E5071171F712B0056DD64 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AF9E5073171F712B0056DD64 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AF9E5075171F712B0056DD64 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AF9E5077171F712B0056DD64 /* TCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCViewController.h; sourceTree = "<group>"; };
+		AF9E5078171F712B0056DD64 /* TCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCViewController.m; sourceTree = "<group>"; };
+		AF9E507B171F712B0056DD64 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TCViewController.xib; sourceTree = "<group>"; };
+		AF9E5082171F73AD0056DD64 /* MatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchingGame.h; sourceTree = "<group>"; };
+		AF9E5083171F73AD0056DD64 /* MatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchingGame.m; sourceTree = "<group>"; };
+		AF9E5089171F7ABF0056DD64 /* TCPlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlayingCard.h; sourceTree = "<group>"; };
+		AF9E508A171F7ABF0056DD64 /* TCPlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlayingCard.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF9E5059171F712B0056DD64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9E5060171F712B0056DD64 /* UIKit.framework in Frameworks */,
+				AF9E5062171F712B0056DD64 /* Foundation.framework in Frameworks */,
+				AF9E5064171F712B0056DD64 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF9E5053171F712B0056DD64 = {
+			isa = PBXGroup;
+			children = (
+				AF9E5065171F712B0056DD64 /* MatchMemoryGame */,
+				AF9E505E171F712B0056DD64 /* Frameworks */,
+				AF9E505D171F712B0056DD64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF9E505D171F712B0056DD64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF9E505C171F712B0056DD64 /* MatchMemoryGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF9E505E171F712B0056DD64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF9E505F171F712B0056DD64 /* UIKit.framework */,
+				AF9E5061171F712B0056DD64 /* Foundation.framework */,
+				AF9E5063171F712B0056DD64 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF9E5065171F712B0056DD64 /* MatchMemoryGame */ = {
+			isa = PBXGroup;
+			children = (
+				AF9E5085171F73C80056DD64 /* Model */,
+				AF9E506E171F712B0056DD64 /* TCAppDelegate.h */,
+				AF9E506F171F712B0056DD64 /* TCAppDelegate.m */,
+				AF9E5077171F712B0056DD64 /* TCViewController.h */,
+				AF9E5078171F712B0056DD64 /* TCViewController.m */,
+				AF9E507A171F712B0056DD64 /* TCViewController.xib */,
+				AF9E5066171F712B0056DD64 /* Supporting Files */,
+			);
+			path = MatchMemoryGame;
+			sourceTree = "<group>";
+		};
+		AF9E5066171F712B0056DD64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF9E5067171F712B0056DD64 /* MatchMemoryGame-Info.plist */,
+				AF9E5068171F712B0056DD64 /* InfoPlist.strings */,
+				AF9E506B171F712B0056DD64 /* main.m */,
+				AF9E506D171F712B0056DD64 /* MatchMemoryGame-Prefix.pch */,
+				AF9E5071171F712B0056DD64 /* Default.png */,
+				AF9E5073171F712B0056DD64 /* Default@2x.png */,
+				AF9E5075171F712B0056DD64 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF9E5085171F73C80056DD64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF9E5082171F73AD0056DD64 /* MatchingGame.h */,
+				AF9E5083171F73AD0056DD64 /* MatchingGame.m */,
+				AF9E5089171F7ABF0056DD64 /* TCPlayingCard.h */,
+				AF9E508A171F7ABF0056DD64 /* TCPlayingCard.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF9E505B171F712B0056DD64 /* MatchMemoryGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF9E507F171F712B0056DD64 /* Build configuration list for PBXNativeTarget "MatchMemoryGame" */;
+			buildPhases = (
+				AF9E5058171F712B0056DD64 /* Sources */,
+				AF9E5059171F712B0056DD64 /* Frameworks */,
+				AF9E505A171F712B0056DD64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MatchMemoryGame;
+			productName = MatchMemoryGame;
+			productReference = AF9E505C171F712B0056DD64 /* MatchMemoryGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF9E5054171F712B0056DD64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Thuy Copeland";
+			};
+			buildConfigurationList = AF9E5057171F712B0056DD64 /* Build configuration list for PBXProject "MatchMemoryGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AF9E5053171F712B0056DD64;
+			productRefGroup = AF9E505D171F712B0056DD64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF9E505B171F712B0056DD64 /* MatchMemoryGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF9E505A171F712B0056DD64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9E506A171F712B0056DD64 /* InfoPlist.strings in Resources */,
+				AF9E5072171F712B0056DD64 /* Default.png in Resources */,
+				AF9E5074171F712B0056DD64 /* Default@2x.png in Resources */,
+				AF9E5076171F712B0056DD64 /* Default-568h@2x.png in Resources */,
+				AF9E507C171F712B0056DD64 /* TCViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF9E5058171F712B0056DD64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF9E506C171F712B0056DD64 /* main.m in Sources */,
+				AF9E5070171F712B0056DD64 /* TCAppDelegate.m in Sources */,
+				AF9E5079171F712B0056DD64 /* TCViewController.m in Sources */,
+				AF9E5084171F73AD0056DD64 /* MatchingGame.m in Sources */,
+				AF9E508B171F7ABF0056DD64 /* TCPlayingCard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF9E5068171F712B0056DD64 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF9E5069171F712B0056DD64 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF9E507A171F712B0056DD64 /* TCViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF9E507B171F712B0056DD64 /* en */,
+			);
+			name = TCViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF9E507D171F712B0056DD64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AF9E507E171F712B0056DD64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF9E5080171F712B0056DD64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MatchMemoryGame/MatchMemoryGame-Prefix.pch";
+				INFOPLIST_FILE = "MatchMemoryGame/MatchMemoryGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AF9E5081171F712B0056DD64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MatchMemoryGame/MatchMemoryGame-Prefix.pch";
+				INFOPLIST_FILE = "MatchMemoryGame/MatchMemoryGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF9E5057171F712B0056DD64 /* Build configuration list for PBXProject "MatchMemoryGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9E507D171F712B0056DD64 /* Debug */,
+				AF9E507E171F712B0056DD64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF9E507F171F712B0056DD64 /* Build configuration list for PBXNativeTarget "MatchMemoryGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9E5080171F712B0056DD64 /* Debug */,
+				AF9E5081171F712B0056DD64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF9E5054171F712B0056DD64 /* Project object */;
+}
