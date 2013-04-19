@@ -8,13 +8,10 @@
 
 #import "TCViewController.h"
 #import "MatchingGame.h"
-#import "TCPlayingCard.h"
 
 @interface TCViewController ()
-
 @property (strong, nonatomic) NSArray *scores;
 @property (nonatomic) MatchingGame *game;
-@property (nonatomic) TCPlayingCard *card;
 
 @end
 
@@ -25,7 +22,7 @@
     [super viewDidLoad];
     
     self.game = [[MatchingGame alloc] init];
-    self.card = [[TCPlayingCard alloc] init];
+
     // setup to make user scores persist
     self.scores = [[NSUserDefaults standardUserDefaults] arrayForKey:@"scores"];
     
@@ -39,8 +36,8 @@
     
     self.startTimer = [NSTimer scheduledTimerWithTimeInterval:self.game.duration target:self selector:@selector(startTime) userInfo:nil repeats:YES];
     
-    // call the function to make the cards
-    [self.card makeCard];
+    // disable buttons until start game is pressed
+    [self hideButtons];
 }
 
 - (void) startTime
@@ -50,14 +47,46 @@
     self.timerLabel.text = currentTime;
 }
 
-// return the card numbers to the cardButtons
-- (void) setCardTitles
+- (void) hideButtons
 {
-    for (int i = 0; i<12; i++)
+    [self.cards setValue: [NSNumber numberWithBool:YES] forKey:@"hidden"];
+}
+
+- (void) showButtons
+{
+    [self.cards setValue: [NSNumber numberWithBool:NO] forKey:@"hidden"];
+}
+
+- (IBAction)startButtonPressed:(id)sender
+{
+    [self showButtons];
+    [self.startButton setHidden:YES];
+    [self.game startGame];
+}
+- (IBAction)cardPressed:(id)sender
+{
+    int index = [self.cards indexOfObject:sender];
+    NSNumber *number = [self.game.cardArray objectAtIndex:index];
+    // this is a method that acts like a property: number.stringValue [NSString stringWithFormat]
+    [sender setTitle:number.stringValue forState:UIControlStateNormal];
+    self.game.tries++;
+    int choice = [[sender currentTitle] integerValue];
+    if([self.game playerChoice:choice])
     {
-        // set the card number to the title or tag
-        [self.cards setTitle: @"ABC" forState:UIControlStateSelected];
+        //[self saveScore];
+        //NSLog(@"Score saved");
+        NSLog(@"You made a match!");
+        [sender setEnabled:NO];
     }
+    else if(self.game.tries < self.game.maxTries)
+    {
+        [sender setHidden: NO];
+    }
+    else
+    {
+        [sender setHidden: YES];
+    }
+    
 }
 - (void)didReceiveMemoryWarning
 {

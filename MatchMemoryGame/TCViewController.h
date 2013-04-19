@@ -12,7 +12,9 @@
 @property (strong, nonatomic) IBOutletCollection (UIButton) NSArray *cards;
 @property (strong, nonatomic) IBOutlet UILabel *messageLabel;
 @property (strong, nonatomic) IBOutlet UILabel *timerLabel;
+@property (strong, nonatomic) IBOutlet UIButton *startButton;
 @property (strong, nonatomic) NSTimer *startTimer;
 @property (strong, nonatomic) NSDateFormatter *dateFormatter;
-
+- (IBAction)cardPressed:(id)sender;
+- (IBAction)startButtonPressed:(id)sender;
 @end

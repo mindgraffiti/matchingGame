@@ -10,15 +10,16 @@
 
 @interface MatchingGame : NSObject
 
-
-@property (assign, nonatomic) NSInteger *maxChoices;
-@property (nonatomic) BOOL isMatch;
-@property (assign, nonatomic) NSInteger totalMisses;
-@property (assign, nonatomic) NSInteger totalMatches;
+@property (strong, nonatomic) NSMutableArray *cardArray;
+@property (assign, nonatomic) NSInteger tries;
+@property (assign, nonatomic) NSInteger maxTries;
 @property (nonatomic) NSTimeInterval duration;
 
 - (void) startGame;
-- (void) pauseGame;
-- (void) resetGame;
+//- (void) pauseGame;
+//- (void) resetGame;
+- (void) makeMatch;
+- (void) winGame;
+- (BOOL) playerChoice: (int) isMatch;
 
 @end

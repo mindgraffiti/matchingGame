@@ -19,7 +19,6 @@
 		AF9E5079171F712B0056DD64 /* TCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9E5078171F712B0056DD64 /* TCViewController.m */; };
 		AF9E507C171F712B0056DD64 /* TCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9E507A171F712B0056DD64 /* TCViewController.xib */; };
 		AF9E5084171F73AD0056DD64 /* MatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9E5083171F73AD0056DD64 /* MatchingGame.m */; };
-		AF9E508B171F7ABF0056DD64 /* TCPlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9E508A171F7ABF0056DD64 /* TCPlayingCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +40,6 @@
 		AF9E507B171F712B0056DD64 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TCViewController.xib; sourceTree = "<group>"; };
 		AF9E5082171F73AD0056DD64 /* MatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchingGame.h; sourceTree = "<group>"; };
 		AF9E5083171F73AD0056DD64 /* MatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchingGame.m; sourceTree = "<group>"; };
-		AF9E5089171F7ABF0056DD64 /* TCPlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPlayingCard.h; sourceTree = "<group>"; };
-		AF9E508A171F7ABF0056DD64 /* TCPlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPlayingCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +116,6 @@
 			children = (
 				AF9E5082171F73AD0056DD64 /* MatchingGame.h */,
 				AF9E5083171F73AD0056DD64 /* MatchingGame.m */,
-				AF9E5089171F7ABF0056DD64 /* TCPlayingCard.h */,
-				AF9E508A171F7ABF0056DD64 /* TCPlayingCard.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -196,7 +191,6 @@
 				AF9E5070171F712B0056DD64 /* TCAppDelegate.m in Sources */,
 				AF9E5079171F712B0056DD64 /* TCViewController.m in Sources */,
 				AF9E5084171F73AD0056DD64 /* MatchingGame.m in Sources */,
-				AF9E508B171F7ABF0056DD64 /* TCPlayingCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +313,7 @@
 				AF9E5081171F712B0056DD64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
